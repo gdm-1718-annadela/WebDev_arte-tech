@@ -14,7 +14,7 @@ WidthClass:5
 AngleClass:0
 FullName:Roboto Medium
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Roboto-Medium.ttf
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Roboto-Medium.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:NonVariableFont
@@ -37,7 +37,7 @@ WidthClass:5
 AngleClass:0
 FullName:Roboto Light
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Roboto-Light.ttf
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Roboto-Light.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:NonVariableFont
@@ -50,9 +50,9 @@ NameArray:0,Win,16,Roboto
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/AdobeFnt21.lst
-FileLength:13704
-FileModTime:599756468
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/AdobeFnt21.lst
+FileLength:13608
+FileModTime:599756720
 %EndFont
 
 %BeginFont
@@ -68,7 +68,7 @@ WidthClass:5
 AngleClass:0
 FullName:Roboto
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Roboto-Regular.ttf
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Roboto-Regular.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:NonVariableFont
@@ -90,7 +90,7 @@ WidthClass:5
 AngleClass:1
 FullName:Roboto Medium Italic
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Roboto-MediumItalic.ttf
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Roboto-MediumItalic.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:NonVariableFont
@@ -113,7 +113,7 @@ WidthClass:5
 AngleClass:0
 FullName:Minion Pro
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/MinionPro-Regular.otf
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/MinionPro-Regular.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
@@ -139,7 +139,7 @@ WidthClass:5
 AngleClass:1
 FullName:Roboto Thin Italic
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Roboto-ThinItalic.ttf
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Roboto-ThinItalic.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:NonVariableFont
@@ -162,7 +162,7 @@ WidthClass:5
 AngleClass:1
 FullName:Roboto Bold Italic
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Roboto-BoldItalic.ttf
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Roboto-BoldItalic.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:NonVariableFont
@@ -184,7 +184,7 @@ WidthClass:5
 AngleClass:1
 FullName:Roboto Light Italic
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Roboto-LightItalic.ttf
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Roboto-LightItalic.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:NonVariableFont
@@ -207,7 +207,7 @@ WidthClass:5
 AngleClass:0
 FullName:Times Roman
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Times.ttc
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Times.ttc
 TTCOffset:40
 DataFormat:sfntData
 hasSVG:no
@@ -230,7 +230,7 @@ WidthClass:5
 AngleClass:0
 FullName:Times Bold
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Times.ttc
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Times.ttc
 TTCOffset:388
 DataFormat:sfntData
 hasSVG:no
@@ -263,7 +263,7 @@ WidthClass:5
 AngleClass:1
 FullName:Times Italic
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Times.ttc
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Times.ttc
 TTCOffset:736
 DataFormat:sfntData
 hasSVG:no
@@ -296,7 +296,7 @@ WidthClass:5
 AngleClass:1
 FullName:Times Bold Italic
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Times.ttc
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Times.ttc
 TTCOffset:1084
 DataFormat:sfntData
 hasSVG:no
@@ -329,7 +329,7 @@ WidthClass:5
 AngleClass:1
 FullName:Roboto Italic
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Roboto-Italic.ttf
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Roboto-Italic.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:NonVariableFont
@@ -351,7 +351,7 @@ WidthClass:5
 AngleClass:1
 FullName:Roboto Black Italic
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Roboto-BlackItalic.ttf
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Roboto-BlackItalic.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:NonVariableFont
@@ -374,7 +374,7 @@ WidthClass:5
 AngleClass:0
 FullName:Roboto Bold
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Roboto-Bold.ttf
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Roboto-Bold.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:NonVariableFont
@@ -396,7 +396,7 @@ WidthClass:5
 AngleClass:0
 FullName:Roboto Thin
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Roboto-Thin.ttf
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Roboto-Thin.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:NonVariableFont
@@ -419,7 +419,7 @@ WidthClass:5
 AngleClass:0
 FullName:Roboto Black
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Roboto-Black.ttf
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Roboto-Black.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:NonVariableFont
@@ -442,7 +442,7 @@ WidthClass:5
 AngleClass:0
 FullName:Helvetica
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Helvetica.ttc
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Helvetica.ttc
 TTCOffset:48
 DataFormat:sfntData
 hasSVG:no
@@ -466,7 +466,7 @@ WidthClass:5
 AngleClass:0
 FullName:Helvetica Bold
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Helvetica.ttc
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Helvetica.ttc
 TTCOffset:380
 DataFormat:sfntData
 hasSVG:no
@@ -502,7 +502,7 @@ WidthClass:5
 AngleClass:1
 FullName:Helvetica Oblique
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Helvetica.ttc
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Helvetica.ttc
 TTCOffset:712
 DataFormat:sfntData
 hasSVG:no
@@ -526,7 +526,7 @@ WidthClass:5
 AngleClass:1
 FullName:Helvetica Bold Oblique
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Helvetica.ttc
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Helvetica.ttc
 TTCOffset:1044
 DataFormat:sfntData
 hasSVG:no
@@ -550,7 +550,7 @@ WidthClass:5
 AngleClass:0
 FullName:Helvetica Light
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Helvetica.ttc
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Helvetica.ttc
 TTCOffset:1376
 DataFormat:sfntData
 hasSVG:no
@@ -574,7 +574,7 @@ WidthClass:5
 AngleClass:1
 FullName:Helvetica Light Oblique
 WritingScript:Roman
-OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier map/Document fonts/Helvetica.ttc
+OutlineFileName:/Users/annadelanghe/Documents/school/CMSDev/Eindwerk1920/dosier/Document fonts/Helvetica.ttc
 TTCOffset:1676
 DataFormat:sfntData
 hasSVG:no
