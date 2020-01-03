@@ -1,0 +1,13 @@
+name: ArteTech
+type: theme
+description: 'Something special'
+core: 8.x
+libraries:
+  # - artetech/global-styling
+  - artetech/global-css
+base theme: classy
+regions:
+  header: Header
+  content: Content
+  sidebar_first: 'Sidebar first'
+  footer: Footer

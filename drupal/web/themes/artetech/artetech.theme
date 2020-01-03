@@ -1,0 +1,67 @@
+<?php
+
+function artetech_preprocess_views_view(&$vars) {  
+ 
+
+  $filter = $vars['view']->filter;
+  $value = $filter['field_datum_value']->value;
+  $min = $value['min'];
+  $max = $value['max'];
+  $klant = $filter['field_klant_value']->value;
+  $test = $filter['field_klant_value']->relationship;
+
+
+  // don't execute extra logic if not periode view
+  if($vars['view']->id() !== 'periode') return false;
+
+  $data = $vars['rows'][0]["#rows"];
+  $startTimeTotal=0;
+  $finalTimeTotal=0;
+  $breakTotal=0;
+  $periode = [];
+  
+  foreach($data as $key => $row) {
+
+    $date = $row['#row']->_entity->get('field_datum')->getString();
+    $startTime = $row['#row']->_entity->get('field_startuur')->getString();
+    $finalTime = $row['#row']->_entity->get('field_einduur')->getString();
+    $break = $row['#row']->_entity->get('field_pauze')->getString();
+    $trans = $row['#row']->_entity->get('field_transport')->getString();
+    $rateId = $row['#row']->_entity->get('field_test')->referencedEntities();
+    $hourRate = $rateId['0']->get('field_uurtarief')->referencedEntities();
+    $transRate = $rateId['0']->get('field_transporttarief')->referencedEntities();
+    $hourRateAmount = $hourRate['0']->get('field_bedrag')->getString();
+    $transRateAmount = $transRate['0']->get('field_bedrag')->getString();
+
+    $startTimeTotal = $startTimeTotal + $startTime;
+    $finalTimeTotal = $finalTimeTotal + $finalTime;
+    $breakTotal = $breakTotal + $break;
+
+    $seconds = $finalTimeTotal - $startTimeTotal - ($breakTotal * 60);
+    $minut = $seconds / 60;
+    $restMin = $minut % 60;
+    $hour = ($minut- $restMin) / 60;
+
+    $totalHourRate = $hourRateAmount * ($minut / 60);
+    $totalTransRate = $transRateAmount * $minut;
+
+    $vars['view']->hourTime = $hour;
+    $vars['view']->minutTime = $restMin;
+    $vars['view']->hourRate = round($totalHourRate, 2);
+    $vars['view']->transRate = $totalTransRate;
+    $vars['view']->min = $min;
+    $vars['view']->max = $max;
+    $vars['view']->klant = $klant;
+    $vars['view']->test = $test;
+    // $vars['view']->title = 
+
+  }
+
+  // if(isset($_POST["submit"]))
+  //   {
+  //     $minDate = $_POST["min"];
+  //     $maxDate = $_POST["max"];
+      
+  //   }
+
+}

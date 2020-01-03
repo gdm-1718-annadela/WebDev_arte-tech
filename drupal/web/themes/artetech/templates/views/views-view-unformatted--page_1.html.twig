@@ -1,0 +1,47 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+
+<form action="hello" method="post">
+<label>periode start</label>
+<label>{{view.min}}</label>
+<input type="text" name="title" placeholder={{view.klant}}></input>
+<input type="date" name="min" value={{view.min}}></input>
+<input type="date" name="max" value={{view.max}}></input>
+<button type="submit" name="submit" >Check periode</button>
+</form>
+
+<h2 class="blue">{{view.min}}</h2>
+<h2>{{view.max}}</h2>
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+  <h1>{{view.hourTime }}:{{view.minutTime }}</h1>
+  <h1>kost: {{view.hourRate }} euro</h1>
+  <h1>transport : {{view.transRate }} euro/km</h1>
+
+{% for row in rows %}
+  {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+    ]
+  %}
+
+  <div{{ row.attributes.addClass(row_classes) }}>
+    {{- row.content -}}
+  </div>
+{% endfor %}
