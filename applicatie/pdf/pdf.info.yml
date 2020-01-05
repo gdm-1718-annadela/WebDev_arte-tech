@@ -1,0 +1,5 @@
+name: Download pdf
+type: module
+description: downloaden van pdf
+package: Custom
+core: 8.x

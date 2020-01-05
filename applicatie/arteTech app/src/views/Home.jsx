@@ -7,9 +7,11 @@ import {
   Link
 } from "react-router-dom";
 
+import "./../css/home.css";
+
 
 export default function Home () {
   return(
-    <h1>Welkom</h1>
+    <h1 className={"home"}>Welkom</h1>
   )
 }

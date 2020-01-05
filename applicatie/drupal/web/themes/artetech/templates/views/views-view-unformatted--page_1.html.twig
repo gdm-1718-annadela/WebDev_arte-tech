@@ -16,24 +16,31 @@
  */
 #}
 
+
 <form action="hello" method="post">
-<label>periode start</label>
-<label>{{view.min}}</label>
-<input type="text" name="title" placeholder={{view.klant}}></input>
+<label>Geef een benaming aan de periode</label>
+<div class="inputs">
+<input class="visible input"type="text" name="title" placeholder={{view.klant}}></input>
+<input type="text" name="klant" value={{view.klant}}></input>
 <input type="date" name="min" value={{view.min}}></input>
 <input type="date" name="max" value={{view.max}}></input>
-<button type="submit" name="submit" >Check periode</button>
+<input type="number" name="uur" value={{view.hourRate}}></input>
+<input type="number" name="trans" value={{view.transRate}}></input>
+<button class="btnColor" type="submit" name="submit" >Check periode</button>
+<p>{{view.datum}}</p>
+</div>
 </form>
 
-<h2 class="blue">{{view.min}}</h2>
-<h2>{{view.max}}</h2>
 {% if title %}
   <h3>{{ title }}</h3>
 {% endif %}
-  <h1>{{view.hourTime }}:{{view.minutTime }}</h1>
-  <h1>kost: {{view.hourRate }} euro</h1>
-  <h1>transport : {{view.transRate }} euro/km</h1>
+<div class="row">
+  <p>totaal gewerkte uren: {{view.hourTime }}:{{view.minutTime }}<p>
+  <p>kost: {{view.hourRate }} euro</hp>
+  <p>transport : {{view.transRate }} euro/km</p>
 
+
+<div class="blockTasks">
 {% for row in rows %}
   {%
     set row_classes = [
@@ -41,7 +48,9 @@
     ]
   %}
 
-  <div{{ row.attributes.addClass(row_classes) }}>
+  <div class="blockTask"{{ row.attributes.addClass(row_classes) }}>
     {{- row.content -}}
   </div>
 {% endfor %}
+
+</div>

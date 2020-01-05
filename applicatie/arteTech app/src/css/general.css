@@ -1,0 +1,43 @@
+.boxshadow{
+    box-shadow: 5px 5px 10px rgba(14, 1, 31, 0.459);
+}
+
+.title {
+    font-family: 'minion pro', 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+.input{
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(14, 1, 31, 0.459);
+    height: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(252, 252, 252, 0.726);
+    padding: 10px 0px;
+
+
+}
+
+.body{
+    background-color: rgba(252, 252, 252, 0.726);
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 10px;
+    height: 80vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px 0 20px;
+    box-sizing: border-box;
+    overflow: scroll;
+    
+}
+
+.body label {
+    color: #3E2764;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: center;
+}

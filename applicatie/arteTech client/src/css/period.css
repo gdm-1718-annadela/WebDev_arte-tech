@@ -1,0 +1,64 @@
+.periodes a div h1 {
+    font-size: 20px;
+    background-color: rgb(236,66,55);
+    color: white;
+    font-weight: 200;
+}
+.periodes a div {
+    background-color: rgba(255, 255, 255, 0.678);
+    text-align: center;
+}
+.periodes a {
+    text-decoration: none;
+    color: rgba(62,39,100,1);
+    width: 30%;
+    height: 20%;
+
+}
+
+.periodes {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+
+.taskbody{
+    width: 50%;
+    position: absolute;
+    margin-left: 50%;
+    display: flex;
+    /* background-color: red; */
+    height: 100vh; 
+    overflow: scroll;
+    justify-content: space-around;
+}
+
+.taskbody div {
+    background-color: rgba(255, 255, 255, 0.555);
+    width: 30%;
+    height: 20vh;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+
+.goedGekeurd{
+    background-color: rgba(255, 255, 255, 0.575);
+    width: 40%;
+    height: 70vh;
+    margin-left: 5%;
+    padding: 10% 3%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px gray;
+    box-sizing: border-box;
+}
+
+.commentblock{
+    height: 200px;
+}
+

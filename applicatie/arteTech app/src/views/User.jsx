@@ -7,6 +7,10 @@ import {
   Link
 } from "react-router-dom";
 
+import './../css/user.css';
+import './../css/general.css';
+
+
 
 export default function User () {
   const [userPicture, setUserPicture] = useState("")
@@ -31,15 +35,24 @@ export default function User () {
   })
   }
 
+  const handlelogout = () => {
+    localStorage.removeItem('token')
+    localStorage.removeItem('role')
+    localStorage.removeItem('userId')
+    localStorage.removeItem('clients')
+    window.location.replace("/")
+  }
+
   useEffect(getUserData,[])
   if(localStorage.getItem('token')){
     console.log(userDate)
     return(
-      <div>
-        <h1>Hi {userDate.name}</h1>
-        <img src={'http://localhost:8888'+ userPicture}/>
-        <h1>{userDate.mail}</h1>
-        <a href="/jobs">Opdrachten</a>
+      <div class="body">
+        <div className = "boxshadow UserPicture"><img src={'http://localhost:8888'+ userPicture}/></div>
+        <h1 className="title">Hi {userDate.name}</h1>
+        <p>{userDate.mail}</p>
+        <a className = "btnOrange" href="/jobs">Opdrachten</a>
+        <button  className = "btnOrange"onClick={handlelogout}>UitLoggen</button>
       </div>
     )
   } else {

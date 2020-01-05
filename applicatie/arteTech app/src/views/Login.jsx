@@ -8,6 +8,9 @@ import {
   Redirect
 } from "react-router-dom";
 
+import './../css/general.css'
+import './../css/login.css'
+
 
 export default function Login () {
   const [userName, setUserName] = useState("")
@@ -45,7 +48,7 @@ export default function Login () {
         const userid = getuser.meta.links.me.meta.id
         localStorage.setItem('userId', userid) 
         // window.location.reload(false);
-        window.location.replace("/login");
+        window.location.replace("/");
 
       })
     })
@@ -66,6 +69,9 @@ export default function Login () {
       try {
         const role = data.included[0].attributes.label
         localStorage.setItem('role', role)
+        if(role){
+          window.location.replace("/");
+        }
       }
       catch {
         return(<h1>no!</h1>)
@@ -73,72 +79,52 @@ export default function Login () {
     })
   }
 
-  let options = []
-
-  function getClients (){
-    fetch('http://localhost:8888/web/jsonapi/user/user', {
-      method: "GET",
-      headers: {
-        'Content-Type': 'application/vnd.api+json',
-        'Accept': 'application/x-www-form-urlencoded',
-        'Authorization': 'Bearer ' +  token
-      },
-    }).then((response) => {
-      return response.json();
-    }).then((data)=> {
-      for(let i = 0; i < data.data.length ; i++){
-        let roles = data.data[i].relationships
-        if (roles){
-          let rolesId = roles.roles.data[0].id
-          if (rolesId == "5cf72a3c-f224-4234-aad8-0bb78c1c56cc"){
-            let nameClient = data.data[i].attributes.name
-            options.push(nameClient)
-          }
-        }
-        localStorage.setItem('clients', JSON.stringify(options))
-        window.location.replace("/login");
-      }
-    })
-  }
-
-  const handlelogout = () => {
+  const logout = () => {
     localStorage.removeItem('token')
     localStorage.removeItem('role')
     localStorage.removeItem('userId')
     localStorage.removeItem('clients')
-    window.location.replace("/login")
+    window.location.replace("/")
   }
 
 
   if(token && !role){
     getUserId()
-    getClients()
-    return(<h1>OHNO</h1>)
-  } else if(role == "medewerker" || role == "Administrator"){
+    return(
+    <div className="body">
+      <h1>Goeiedag!</h1>
+      <p>U bent helaas geen gebruiker van onze applicatie! Bezoek zeker onze website!</p>
+      <button className="btnColor btnLogin boxshadow"onClick={logout}>Verlaten</button>
+      </div>)
+  } else if(role == "Onderaannemer" ||role == "medewerker" || role == "Administrator"){
     return(
     <div>
       <h1>Welkom!</h1>
-      <button onClick={handlelogout}>UitLoggen</button>
+      
     </div>
     )
   } 
   else {
     return(
-      <div>
-        <h1>Login</h1>
-        <label>Gebruikersnaam</label>
-        <input
-          name="username"
-          type="text"
-          onChange={(e) => setUserName(e.target.value)}
-        />
-        <label>Gebruikersnaam</label>
-        <input
-          name="password"
-          type="password"
-          onChange={(e) => setPassword(e.target.value)} 
-        />
-        <button onClick={handleSubmit}>Login</button>
+      <div className="body loginBody boxshadow">
+        <h1 className="title loginTitle">Login</h1>
+        <div className="loginFormulier">
+          <label className="loginlabel">Gebruikersnaam</label>
+          <input
+            className="input loginInput"
+            name="username"
+            type="text"
+            onChange={(e) => setUserName(e.target.value)}
+          />
+          <label className="loginlabel">Wachtwoord</label>
+          <input
+            className="input loginInput"
+            name="password"
+            type="password"
+            onChange={(e) => setPassword(e.target.value)} 
+          />
+          <button className="btnColor btnLogin boxshadow"onClick={handleSubmit}>Login</button>
+        </div>
       </div>
     )
   }

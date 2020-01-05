@@ -1,0 +1,6 @@
+hello_world:
+  path: /pdfdownload
+  defaults:
+    _controller: Drupal\pdf\Controller\PdfController::download
+  requirements:
+    _permission: 'access content'

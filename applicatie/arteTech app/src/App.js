@@ -4,8 +4,10 @@ import Home from './views/Home.jsx';
 import User from './views/User.jsx';
 import Task from './views/Task.jsx';
 import Jobs from './views/Jobs.jsx';
-
-import './App.css';
+import Fault from './views/Fault.jsx';
+import './css/button.css';
+import './css/navigation.css';
+import Img from './assets/logo.png';
 
 import {
   BrowserRouter as Router,
@@ -14,23 +16,35 @@ import {
   Link
 } from "react-router-dom";
 
+function handleNavigation() {
+  console.log('test')
+  console.log(document.getElementById('navigation'))
+  document.getElementById('navigation').style.display = "block"
+}
+
 
 function App() {
-  if(localStorage.getItem('token')){
+  if(localStorage.getItem('role') == "medewerker"){
   return (
-    <div>
-    <a href="/">Home</a>
-    <a href="/gebruiker">account</a>
-    <a href="/task">taak</a>
-    <a href="/login">log uit</a>
+    <div >
+      <div className="navigation"  onClick={handleNavigation}></div>
+      <div id="navigation" >
+        <div className="navigationColumn">
+          <a href="/"><img className="logo"src={Img} /></a>
+          <a href="/gebruiker">account</a>
+          <a href="/taak">taak</a>
+          <a href="/jobs">Jobs</a>
+          <a href="/fout">Foutmelding</a>
+        </div>
+    </div>
 
     <Router>
-    <div>
+    <div className="page">
       <Route path="/" component={Home} exact/>
       <Route path="/gebruiker" component={User} exact/>
-      <Route path="/task" component={Task} exact/>
-      <Route path="/login" component={Login} exact/>
+      <Route path="/taak" component={Task} exact/>
       <Route path="/jobs" component={Jobs} exact/>
+      <Route path="/fout" component={Fault} exact/>
     </div>
     </Router>
 
@@ -40,11 +54,8 @@ function App() {
   else {
     return(
       <div>
-    <a href="/">Home</a>
-    <a href="/login">Log in</a>
     <Router>
-    <Route path="/" component={Home} exact/>
-    <Route path="/login" component={Login} exact/>
+    <Route path="/" component={Login} exact/>
     </Router>
 
     </div>

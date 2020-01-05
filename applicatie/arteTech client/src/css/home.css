@@ -1,0 +1,27 @@
+.welkomTitle h2, .welkomTitle h1{
+    font-family: 'Roboto' Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+.welkomTitle h2{
+    font-weight: 700;
+    color: gray;
+}
+
+.welkomTitle h1{
+    color: rgba(62,39,100,1);
+    font-size: 50px;
+}
+
+.welkomTitle{
+    position: absolute;
+    /* background-color: red; */
+    width: 40%;
+    text-align: center;
+    margin-left: 20px;
+    top: 40vh;
+
+}

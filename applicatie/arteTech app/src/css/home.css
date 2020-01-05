@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('./../assets/background2.jpg');
+    height: 100vh;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home{
+    color: black;
+    font-family: 'Minion Pro','Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 30%;
+}

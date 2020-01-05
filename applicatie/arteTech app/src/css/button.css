@@ -1,0 +1,40 @@
+.btnWhite{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    border: white solid 5px;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+
+.btnColor{
+    background: rgb(236,66,55);
+    background: linear-gradient(110deg, rgba(236,66,55,1) 0%, rgba(62,39,100,1) 100%);
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 7px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.btnOrange {
+    color: rgb(236,66,55);
+    text-decoration: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border: rgb(236,66,55) solid 5px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    text-align: center;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}

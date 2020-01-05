@@ -1,0 +1,27 @@
+
+.loginTitle{
+    text-align: center;
+}
+
+
+.loginFormulier{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.loginlabel{
+    color: #3E2764;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+.loginInput{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
